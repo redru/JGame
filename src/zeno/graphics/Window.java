@@ -15,7 +15,6 @@ public class Window extends JFrame {
         add(Window.canvas);
 
         pack();
-        setVisible(true);
     }
 
 }

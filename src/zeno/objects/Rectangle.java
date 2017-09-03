@@ -16,10 +16,9 @@ public class Rectangle extends GameObject {
     }
 
     @Override
-    public void draw() {
-        Graphics2D g2d =  Window.canvas.getG2();
-        g2d.setColor(Color.CYAN);
-        g2d.fillRect(10, 10, 50, 50);
+    public void draw(Graphics2D g2) {
+        g2.setColor(Color.CYAN);
+        g2.fillRect(10, 10, 50, 50);
     }
 
 }

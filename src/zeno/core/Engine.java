@@ -24,6 +24,7 @@ public class Engine {
     }
 
     public void start() {
+        window.setVisible(true);
         timer = new Chrono();
 
         while (running) {
@@ -32,12 +33,8 @@ public class Engine {
                 Engine.FrameTime = timer.restart();
 
                 dataStore.getGameObjects().forEach(GameObject::update);
-                dataStore.getGameObjects().forEach(GameObject::draw);
-
 
                 window.repaint();
-                Window.canvas.getG2().setColor(Color.BLACK);
-                Window.canvas.getG2().fillRect(0,0,1280,720);
             }
         }
     }

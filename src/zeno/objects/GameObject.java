@@ -1,5 +1,7 @@
 package zeno.objects;
 
+import java.awt.*;
+
 public abstract class GameObject {
 
     private static int count = 0;
@@ -15,7 +17,7 @@ public abstract class GameObject {
 
     public void update() { }
 
-    public void draw() { }
+    public void draw(Graphics2D g2) { }
 
     public int getId() {
         return id;
